@@ -1,0 +1,311 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:orientation="horizontal"
+    android:padding="10dp"
+    android:layout_margin="6dp"
+    android:paddingStart="5dp"
+    android:paddingEnd="5dp"
+    android:background="@drawable/no_border"
+    android:elevation="3dp"
+    android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:id="@+id/l2"
+        >
+
+        <LinearLayout
+            android:layout_width="0dp"
+
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_weight="3">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:id="@+id/discountLayout"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/rounded_rectangle_left_right_top_btm"
+                    android:orientation="horizontal"
+                    android:paddingStart="8dp"
+                    android:paddingTop="3dp"
+                    android:paddingEnd="12dp"
+                    android:paddingBottom="3dp"
+                    >
+
+                    <TextView
+                        android:id="@+id/disountTextView"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:text="3.5"
+                        android:textColor="@android:color/white"
+                        android:textStyle="bold" />
+
+
+                </LinearLayout>
+
+
+                <TextView
+                    android:layout_marginTop="5dp"
+                    android:id="@+id/similarBrandTypeText"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:singleLine="true"
+                    android:text="Brand"
+                    android:fontFamily="@font/archivo_black"
+                    android:textColor="@color/sky_blue"
+                    android:textSize="14sp" />
+
+                <TextView
+                    android:layout_marginTop="3dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:maxWidth="300dip"
+                    android:layout_weight="1"
+                    android:textSize="15sp"
+                    android:maxLines="1"
+                    android:layout_marginBottom="3dp"
+                    android:textStyle="bold"
+                    android:id="@+id/title"
+                    android:textColor="@color/black"
+                    android:text="Amul Puizza Cheese-Mozzarrella 100 gms"/>
+
+
+
+                <TextView
+                    android:layout_marginTop="3dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:maxWidth="300dip"
+                    android:layout_weight="1"
+                    android:textSize="14sp"
+                    android:maxLines="1"
+                    android:layout_marginBottom="3dp"
+
+                    android:text="category"
+                    android:id="@+id/category"
+                    android:textColor="@color/black"
+                   />
+
+
+            </LinearLayout>
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Cheese"
+                android:textSize="16sp"
+                android:layout_marginBottom="10dp"
+                android:maxLines="1"
+                android:ellipsize="end"
+                android:id="@+id/description"/>
+
+
+
+            <LinearLayout
+
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/red"
+                    android:text="₹ 110"
+                    android:layout_gravity="bottom"
+                    android:textStyle="bold"
+                    android:id="@+id/actualPriceTextView"/>
+
+
+
+
+            </LinearLayout>
+
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="#81C784"
+                android:textStyle="bold"
+                android:layout_marginBottom="5dp"
+                android:id="@+id/availabilityTextView"
+                android:text="Available : In Stock"/>
+
+            <RatingBar
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                style="?android:attr/ratingBarStyleSmall"
+                android:numStars="5"
+                android:rating="3.5"
+                android:id="@+id/ratingBar"
+                android:progressTint="#FFD700"
+                />
+
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+
+                    android:layout_alignParentStart="true"
+
+                    android:orientation="horizontal">
+
+                    <TextView
+
+                        android:id="@+id/unitTv"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textStyle="bold"
+                        android:gravity="center_vertical"
+                        android:textSize="16dp"
+                        android:text="Unit:"
+                        android:textColor="@color/black" />
+                    <TextView
+                        android:id="@+id/unitTvOrg"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+
+                        android:gravity="center_vertical"
+                        android:maxLength="5"
+                        android:text="1"
+                        android:textStyle="bold"
+                        android:layout_marginStart="5dp"
+                        android:textSize="16dp"
+                        android:textColor="@color/black" />
+                </LinearLayout>
+
+
+
+
+
+
+
+            </RelativeLayout>
+
+        </LinearLayout>
+
+        <RelativeLayout
+
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:layout_weight="1.5">
+
+            <!--            changed imageview width and height from 60dp to 85dp-->
+
+
+            <ImageView
+                android:layout_alignParentTop="true"
+                android:id="@+id/productImageView"
+                android:layout_width="5dp"
+                android:layout_height="100dp"
+                android:layout_marginStart="3dp"
+                android:layout_marginTop="20dp"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentEnd="true"
+                android:layout_marginEnd="3dp"
+                android:layout_marginBottom="60dp"
+                android:scaleType="centerCrop"
+                android:layout_alignParentBottom="true"
+                android:src="@drawable/noimage" />
+
+
+
+
+
+
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:visibility="gone"
+                android:id="@+id/quantityLinearLayout"
+                android:layout_alignParentBottom="true"
+                android:layout_centerHorizontal="true"
+                android:layout_marginBottom="5dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="20dp"
+                    android:layout_height="25dp"
+                    android:text="-"
+                    android:layout_margin="1dp"
+                    android:background="@drawable/custom_accent_button"
+                    android:textAlignment="center"
+                    android:textSize="16sp"
+                    android:id="@+id/decrementTextView"
+                    android:gravity="center"
+                    android:textColor="@color/sky_blue"/>
+
+
+                <TextView
+                    android:layout_width="30dp"
+                    android:layout_height="25dp"
+                    android:text="0"
+                    android:layout_margin="1dp"
+                    android:background="@drawable/custom_accent_button"
+                    android:textAlignment="center"
+                    android:textSize="14sp"
+                    android:id="@+id/quantityTextView"
+                    android:gravity="center"
+                    android:textColor="@color/sky_blue"/>
+
+
+                <TextView
+                    android:layout_width="20dp"
+                    android:layout_height="25dp"
+                    android:text="+"
+                    android:layout_margin="1dp"
+                    android:background="@drawable/custom_accent_button"
+                    android:textAlignment="center"
+                    android:textSize="16sp"
+                    android:id="@+id/incrementTextView"
+                    android:gravity="center"
+                    android:textColor="@color/sky_blue"/>
+
+
+
+
+
+
+
+
+
+
+            </LinearLayout>
+
+
+
+
+        </RelativeLayout>
+
+    </LinearLayout>
+
+
+
+
+
+
+
+
+
+</RelativeLayout>
